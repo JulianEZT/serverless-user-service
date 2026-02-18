@@ -1,45 +1,36 @@
-# Dependencies
-node_modules/
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
-# Build / output
-dist/
-build/
-.out/
-*.tsbuildinfo
+# Go build output
+/bin/
+/build/
 
-# Serverless
-.serverless/
-.webpack/
+# Test and coverage
+*.test
+*.out
+coverage.html
+coverage.txt
 
-# Environment & secrets
-.env
-.env.local
-.env.*.local
-*.pem
+# Go workspace
+go.work
+go.work.sum
 
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Testing & coverage
-coverage/
-.nyc_output/
-*.lcov
-
-# IDE / editor
+# IDE and OS
 .idea/
 .vscode/
 *.swp
 *.swo
-*~
-
-# OS
 .DS_Store
 Thumbs.db
-ehthumbs.db
 
-# Optional: descomenta si usas npm en la raíz y no quieres commitear el lock
-# package-lock.json
+# Env and secrets (do not commit)
+.env
+.env.local
+*.pem
+
+# Lambda / deployment artifacts (if you build locally)
+*.zip
